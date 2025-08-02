@@ -1,4 +1,4 @@
-0_scripts
+^/0_scripts
 \.git
 \.gitignore
 \.gitmodules
