@@ -4,6 +4,9 @@ if [[ -S "$sock" ]]; then
   export SSH_AUTH_SOCK="$sock"
 fi
 
+# Source aliases file, .zsh_aliases, assumed in the same directory as this .zshrc file
+source "${0:A:h}/.zsh_aliases"
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
