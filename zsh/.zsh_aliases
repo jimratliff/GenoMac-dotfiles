@@ -1,10 +1,14 @@
 # Placeholder for aliases
 
 # Replace ls with eza
-alias ls="eza -1" # List each file on its own line
+alias ls="eza"
+alias ls1="eza -1" # List each file on its own line
 alias ll='eza -alhigo' # Long form with header, icons, git status, and octal permissions
 
 # Replace tree with eza
 alias tree="eza --tree"
+
+Replace cat with bat
+alias cat="bat"
 
 alias ..='cd ..'
