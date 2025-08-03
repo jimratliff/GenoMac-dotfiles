@@ -2,7 +2,7 @@
 
 # Replace ls with eza
 alias ls="eza -1" # List each file on its own line
-alias ll='eza -alho' # Long form with octal permissions
+alias ll='eza -alhigo' # Long form with header, icons, git status, and octal permissions
 
 # Replace tree with eza
 alias tree="eza --tree"
