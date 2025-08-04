@@ -4,11 +4,14 @@ This repository is a public-repo adjunct to the private repository GenoMac. Wher
 
 This repository is intended to be used with [GNU Stow](https://www.gnu.org/software/stow/).
 
-The use of GNU Stow will be managed, by USER_CONFIGURER, by a different repository: [GenoMac](https://github.com/jimratliff/GenoMac)
+The use of GNU Stow will be managed, by USER_CONFIGURER, by a different repository: [GenoMac](https://github.com/jimratliff/GenoMac).
+
+The environment variables referenced here in this README, e.g., GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY and GENOMAC_DOTFILES_REPO_URL, and defined in the
+assign_environment_variables.sh script in the [GenoMac](https://github.com/jimratliff/GenoMac) repository.
 
 ## Destination(s)
 ### All users
-This repo should be cloned to GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY for each user (yes, including USER_CONFIGURER) in Project GenoMac
+This repo should be cloned to GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY for each user (yes, including USER_CONFIGURER) in Project GenoMac.
 
 ```shell
 git clone "$GENOMAC_DOTFILES_REPO_URL" "$GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY"
