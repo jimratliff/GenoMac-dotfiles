@@ -4,6 +4,8 @@ This repository is a public-repo adjunct to the private repository GenoMac. Wher
 
 This repository is intended to be used with [GNU Stow](https://www.gnu.org/software/stow/).
 
+The use of GNU Stow will be managed, by USER_CONFIGURER, by a different repository: [GenoMac](https://github.com/jimratliff/GenoMac)
+
 ## Destination(s)
 ### All users
 This repo should be cloned to GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY for each user (yes, including USER_CONFIGURER) in Project GenoMac
