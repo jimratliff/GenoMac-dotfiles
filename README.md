@@ -6,14 +6,14 @@ This repository is intended to be used with [GNU Stow](https://www.gnu.org/softw
 
 ## Destination(s)
 ### All users
-This repo should be cloned to ~/.dotfiles for each user (yes, including USER_CONFIGURER) in Project GenoMac
+This repo should be cloned to GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY for each user (yes, including USER_CONFIGURER) in Project GenoMac
 
 ```shell
-git clone https://github.com/jimratliff/GenoMac-dotfiles.git ~/.dotfiles
+git clone "$GENOMAC_DOTFILES_REPO_URL" "$GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY"
 ```
 
 ### USER_CONFIGURER
-In order to develop and maintain this repo, USER_CONFIGURER should in addition (to cloning this to `~/.dotfiles`) clone this repo to some other location (other than `~/.dotfiles`) for all write operations to this repo.
+In order to develop and maintain this repo, USER_CONFIGURER should in addition (to cloning this to GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY) clone this repo to some other location (other than GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY) for all write operations to this repo for the further development of this repo.
 
 
 [^1]: The meaning of the term “dotfiles” has been expanded in popular usage to also include, for example, `defaults` commands in macOS and other aspects of bootstrapping and configuring a Mac. This repo does *not* adopt this broader meaning.
