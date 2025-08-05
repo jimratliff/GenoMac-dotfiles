@@ -11,4 +11,5 @@ alias tree="eza --tree"
 # Replace cat with bat
 alias cat="bat"
 
+# Navigate up one directory
 alias ..='cd ..'
