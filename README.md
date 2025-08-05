@@ -10,6 +10,8 @@ The environment variables referenced here in this README, e.g., GENOMAC_DOTFILES
 assign_environment_variables.sh script in the [GenoMac](https://github.com/jimratliff/GenoMac) repository. The dotfiles in this repository as merely
 the *data* that need to be locally cloned, and which will be managed by the [GenoMac](https://github.com/jimratliff/GenoMac) repository.
 
+The exception to the contents of GenoMac-dotfiles being data for dotfile management is the `0_scripts` directory, which exists to provide any script that needs to be run at the user level. The one use case motivating this here is a script to create additional Mission Control spaces.
+
 ## Destination(s)
 ### All users
 This repo should be cloned to GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY for each user (yes, including USER_CONFIGURER) in Project GenoMac.
