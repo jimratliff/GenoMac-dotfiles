@@ -8,7 +8,7 @@ alias ll='eza -alhigo' # Long form with header, icons, git status, and octal per
 # Replace tree with eza
 alias tree="eza --tree"
 
-Replace cat with bat
+# Replace cat with bat
 alias cat="bat"
 
 alias ..='cd ..'
