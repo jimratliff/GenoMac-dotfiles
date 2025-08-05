@@ -7,7 +7,8 @@ This repository is intended to be used with [GNU Stow](https://www.gnu.org/softw
 The use of GNU Stow will be managed, by USER_CONFIGURER, by a different repository: [GenoMac](https://github.com/jimratliff/GenoMac).
 
 The environment variables referenced here in this README, e.g., GENOMAC_DOTFILES_LOCAL_STOW_DIRECTORY and GENOMAC_DOTFILES_REPO_URL, and defined in the
-assign_environment_variables.sh script in the [GenoMac](https://github.com/jimratliff/GenoMac) repository.
+assign_environment_variables.sh script in the [GenoMac](https://github.com/jimratliff/GenoMac) repository. The dotfiles in this repository as merely
+the *data* that need to be locally cloned, and which will be managed by the [GenoMac](https://github.com/jimratliff/GenoMac) repository.
 
 ## Destination(s)
 ### All users
