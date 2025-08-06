@@ -20,8 +20,8 @@ source <(fzf --zsh)
 
 ############### Snippets that should be “at the end”
 
-# Enable zsh-autosuggestions (DISABLED)
-# source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Enable zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable zsh-syntax-highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
