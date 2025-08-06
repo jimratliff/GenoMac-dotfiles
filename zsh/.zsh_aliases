@@ -15,7 +15,7 @@ alias ls="eza"
 alias ls1="eza -1 --all --icons --git-ignore" # List each file on its own line with its icon
 
 # Trees
-alias lt="eza  --tree --level 1 --all --icons --git-ignore"
+alias lt="eza  --tree           --all --icons --git-ignore"
 alias lt1="eza --tree --level 1 --all --icons --git-ignore"
 alias lt2="eza --tree --level 2 --all --icons --git-ignore"
 alias lt3="eza --tree --level 3 --all --icons --git-ignore"
