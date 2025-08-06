@@ -33,7 +33,10 @@ alias tree="eza --tree"
 alias cat="bat"
 
 ############### File-system navigation
-alias ..='cd ..'         # Navigate up 1 directory
-alias .. ='cd ../..'     # Navigate up 2 directories
-alias ..2="cd ../.."     # Navigate up 2 directories
-alias ..3="cd ../../.."  # Navigate up 3 directories
+alias ..='cd ..'              # Navigate up 1 directory
+alias ...='cd ../..'          # Navigate up 2 directories
+alias ..2="cd ../.."          # Navigate up 2 directories
+alias ....='cd ../../..'      # Navigate up 3 directories
+alias ..3="cd ../../.."       # Navigate up 3 directories
+alias .....='cd ../../../..'  # Navigate up 4 directories
+alias ..4="cd ../../../.."    # Navigate up 4 directories
