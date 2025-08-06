@@ -16,5 +16,8 @@ source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+# Enable zsh-autosuggestions
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Enable zoxide (must be at the end of this file)
 eval "$(zoxide init zsh)"
