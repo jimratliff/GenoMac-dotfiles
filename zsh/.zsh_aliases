@@ -1,6 +1,9 @@
 ############### Reload shell
 alias reload_shell="source ~/.zshrc"
 
+############### Show aliases
+alias show_aliases="bat ~/.zsh_aliases"
+
 ############### Replace ls with eza
 alias ls="eza"
 
