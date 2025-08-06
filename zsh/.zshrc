@@ -16,7 +16,7 @@ fi
 source "${0:A:h}/.zsh_aliases"
 
 # Set up fzf key bindings and fuzzy completion
-# source <(fzf --zsh)
+source <(fzf --zsh)
 
 ############### Snippets that should be “at the end”
 
