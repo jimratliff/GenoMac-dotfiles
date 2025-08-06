@@ -1,3 +1,6 @@
+############### Reload shell
+alias reload_shell="source ~/.zshrc"
+
 ############### Replace ls with eza
 alias ls="eza"
 
@@ -6,7 +9,7 @@ alias ls="eza"
 # - show file icon
 
 # Non-long forms
-alias ls1="eza -1 -all --icons --git-ignore" # List each file on its own line with its icon
+alias ls1="eza -1 --all --icons --git-ignore" # List each file on its own line with its icon
 
 # Trees
 alias lt="eza  --tree --level 1 --all --icons --git-ignore"
