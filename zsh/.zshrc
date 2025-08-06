@@ -10,7 +10,7 @@ fi
 # • ${0:A:h} → head (i.e., directory) of the absolute path
 source "${0:A:h}/.zsh_aliases"
 
-# Activate zsh-autocomplete
+# Enable zsh-autocomplete
 source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Set up fzf key bindings and fuzzy completion
