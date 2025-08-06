@@ -23,6 +23,9 @@ source <(fzf --zsh)
 # Enable zsh-autosuggestions (DISABLED)
 # source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Enable zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Enable zoxide
 eval "$(zoxide init zsh)"
 
