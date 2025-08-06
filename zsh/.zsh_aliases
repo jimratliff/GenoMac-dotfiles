@@ -19,6 +19,8 @@ alias lt="eza  --tree           --all --icons --git-ignore"
 alias lt1="eza --tree --level 1 --all --icons --git-ignore"
 alias lt2="eza --tree --level 2 --all --icons --git-ignore"
 alias lt3="eza --tree --level 3 --all --icons --git-ignore"
+alias lt4="eza --tree --level 4 --all --icons --git-ignore"
+alias lt5="eza --tree --level 5 --all --icons --git-ignore"
 
 # Long forms
 
