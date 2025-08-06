@@ -33,4 +33,4 @@ eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 ############### Final bit: interactive shell only
-[[ -o interactive ]] && echo "Zsh ready"
+[[ -o interactive ]] && echo "Zsh ready. You might try 'reload_shell' and 'show_aliases'."
