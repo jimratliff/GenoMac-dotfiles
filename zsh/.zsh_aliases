@@ -22,7 +22,8 @@ alias lt3="eza --tree --level 3 --all --icons --git-ignore"
 
 # Long forms
 
-alias ll="eza -lho --all --icons --git-ignore" # Long form with header, git status, and octal permissions
+alias  ll="eza -long --headers --octal --all --icons --git --no-permissions --no-user --no-time --git-ignore"
+alias lll="eza -long --headers --octal --all --icons --git                                      --git-ignore"
 
 ############### Replace tree with eza
 alias tree="eza --tree"
