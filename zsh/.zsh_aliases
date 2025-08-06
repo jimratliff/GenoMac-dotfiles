@@ -32,6 +32,8 @@ alias tree="eza --tree"
 ############### Replace cat with bat
 alias cat="bat"
 
-############### Navigation
-# Navigate up one directory
-alias ..='cd ..'
+############### File-system navigation
+alias ..='cd ..'         # Navigate up 1 directory
+alias .. ='cd ../..'     # Navigate up 2 directories
+alias ..2="cd ../.."     # Navigate up 2 directories
+alias ..3="cd ../../.."  # Navigate up 3 directories
