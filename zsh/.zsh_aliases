@@ -1,15 +1,29 @@
-# Placeholder for aliases
-
-# Replace ls with eza
+############### Replace ls with eza
 alias ls="eza"
-alias ls1="eza -1" # List each file on its own line
-alias ll='eza -alhigo' # Long form with header, icons, git status, and octal permissions
 
-# Replace tree with eza
+# In all below variants of eza:
+# - include hidden files but exclude all files that are .gitignore-d.
+# - show file icon
+
+# Non-long forms
+alias ls1="eza -1 -all --icons --git-ignore" # List each file on its own line with its icon
+
+# Trees
+alias lt="eza -tree --level 1 -all --icons --git-ignore"
+alias lt1="eza -tree --level 1 -all --icons --git-ignore"
+alias lt2="eza -tree --level 2 -all --icons --git-ignore"
+alias lt3="eza -tree --level 3 -all --icons --git-ignore"
+
+# Long forms
+
+alias ll="eza -lho -all --icons --git-ignore" # Long form with header, git status, and octal permissions
+
+############### Replace tree with eza
 alias tree="eza --tree"
 
-# Replace cat with bat
+############### Replace cat with bat
 alias cat="bat"
 
+############### Navigation
 # Navigate up one directory
 alias ..='cd ..'
