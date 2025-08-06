@@ -21,3 +21,6 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable zoxide (must be at the end of this file)
 eval "$(zoxide init zsh)"
+
+# Enable starship
+eval "$(starship init zsh)"
