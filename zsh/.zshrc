@@ -1,3 +1,8 @@
+############### Snippets that should appear near the top
+
+# Enable zsh-autocomplete
+source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+
 # Automatically use 1Password SSH agent if present
 sock="$HOME/.1password/agent.sock"
 if [[ -S "$sock" ]]; then
@@ -10,17 +15,19 @@ fi
 # • ${0:A:h} → head (i.e., directory) of the absolute path
 source "${0:A:h}/.zsh_aliases"
 
-# Enable zsh-autocomplete
-source /opt/homebrew/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+############### Snippets that should be “at the end”
 
 # Enable zsh-autosuggestions
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Enable zoxide (must be at the end of this file)
+# Enable zoxide
 eval "$(zoxide init zsh)"
 
 # Enable starship
 eval "$(starship init zsh)"
+
+############### Final bit: interactive shell only
+[[ -o interactive ]] && echo "Zsh ready"
