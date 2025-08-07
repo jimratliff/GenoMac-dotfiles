@@ -1,6 +1,9 @@
 ############### Reload shell
 alias reload_shell="source ~/.zshrc"
 
+############### Update dotfiles
+alias update_dotfiles="(cd ~/.genomac-dotfiles && echo "📦 Pulling latest dotfiles…" && git pull origin main)"
+
 ############### Show aliases
 alias show_aliases="bat ~/.zsh_aliases"
 
