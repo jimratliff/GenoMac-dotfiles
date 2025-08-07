@@ -31,6 +31,8 @@ ignore_branches = ["main", "master"]
 
 [git_commit]
 tag_disabled = false
+only_detached = false
+disabled = false
 
 [git_status]
 conflicted = '🏳'
