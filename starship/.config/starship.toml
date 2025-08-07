@@ -7,6 +7,7 @@ $fill\
 $python\
 $docker_context\
 $cmd_duration\
+$time\
 $line_break\
 $sudo\
 $character\
@@ -64,4 +65,8 @@ disabled = false
 [sudo]
 symbol = '🚨SUDO⚡️'
 format = '[\($symbol\) ]($style)'
+disabled = false
+
+[time]
+format = '⏱️ [$time]($style) '
 disabled = false
