@@ -78,6 +78,6 @@ time_format = '📅 %F ⏱️ %T'
 disabled = false
 
 [username]
-format = '\(👤 [$user\) ]($style)'
-show_always = false
+format = '\(👤 [$user]($style)\) '
+show_always = true
 disabled = false
