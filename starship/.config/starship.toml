@@ -16,9 +16,11 @@ $character"""
 # Inserts a blank line between shell prompts
 add_newline = true
 
-# Replace the '❯' symbol in the prompt with '🔶'
 [character]
 success_symbol = "🔶" 
 error_symbol = "❌"
+
+[directory]
+home_symbol = "🏠"
 
 
