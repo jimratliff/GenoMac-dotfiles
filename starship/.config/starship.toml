@@ -75,4 +75,5 @@ disabled = false
 
 [username]
 format = 'User: [$user ]($style)'
+show_always = true
 disabled = false
