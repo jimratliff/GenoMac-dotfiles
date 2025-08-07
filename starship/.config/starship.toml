@@ -57,5 +57,5 @@ disabled = false
 disabled = false
 
 [status]
-format = '[$symbol$status]($style) '
+format = '[ERROR$status]($style) '
 disabled = false
