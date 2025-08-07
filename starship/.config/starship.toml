@@ -9,7 +9,7 @@ $docker_context\
 $cmd_duration\
 $time\
 $line_break\
-$username
+$username\
 $sudo\
 $character\
 $status"""
@@ -74,6 +74,6 @@ time_format = '📅 %F ⏱️ %T'
 disabled = false
 
 [username]
-format = 'User: [$user ]($style)'
+format = '\(👤 User: [$user ]\)($style)'
 show_always = true
 disabled = false
