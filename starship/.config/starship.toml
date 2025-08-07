@@ -79,5 +79,5 @@ disabled = false
 
 [username]
 format = '\(👤 [$user]($style)\) '
-show_always = true
+show_always = false
 disabled = false
