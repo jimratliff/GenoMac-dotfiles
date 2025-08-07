@@ -27,7 +27,7 @@ error_symbol = "❌"
 disabled = false
 
 [cmd_duration]
-format = '\(⏳ [$duration] ($style)\) '
+format = '(⏳ [$duration] ($style)) '
 disabled = false
 
 [directory]
