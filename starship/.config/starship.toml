@@ -62,6 +62,6 @@ format = '[\(ERROR $status\)]($style) '
 disabled = false
 
 [sudo]
-symbol = '«🚨SUDO⚡️»'
-format = '[$symbol]($style)'
+symbol = '🚨SUDO⚡️'
+format = '[\($symbol\) ]($style)'
 disabled = false
