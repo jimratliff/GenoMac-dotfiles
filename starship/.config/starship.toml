@@ -8,8 +8,8 @@ $python\
 $docker_context\
 $cmd_duration\
 $line_break\
-$sudo\
 $character\
+$sudo\
 $status"""
 
 
@@ -63,4 +63,5 @@ disabled = false
 
 [sudo]
 symbol = '⚡️'
+format = '[«$symbol»]($style)'
 disabled = false
