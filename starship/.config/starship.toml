@@ -68,5 +68,5 @@ format = '[\($symbol\) ]($style)'
 disabled = false
 
 [time]
-format = '⏱️ [$time]($style) '
+format = '⏱️ [$time ]($style) '
 disabled = false
