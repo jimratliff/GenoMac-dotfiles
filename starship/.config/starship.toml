@@ -69,4 +69,5 @@ disabled = false
 
 [time]
 format = '⏱️ [$time ]($style) '
+time_format = '%T'
 disabled = false
