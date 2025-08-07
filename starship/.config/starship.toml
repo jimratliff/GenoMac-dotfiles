@@ -36,7 +36,7 @@ ignore_branches = ["main", "master"]
 disabled = false
 
 [git_commit]
-format = '[\(#️⃣ $hash$tag\)]($style) '
+format = '[\(#️⃣  $hash$tag\)]($style) '
 tag_disabled = false
 only_detached = false
 disabled = false
@@ -69,5 +69,5 @@ disabled = false
 
 [time]
 format = '[$time ]($style) '
-time_format = '📅%F ⏱️ %T'
+time_format = '📅 %F ⏱️ %T'
 disabled = false
