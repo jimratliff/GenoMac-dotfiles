@@ -8,6 +8,7 @@ $python\
 $docker_context\
 $cmd_duration\
 $line_break\
+$sudo\
 $character\
 $status"""
 
@@ -58,4 +59,8 @@ disabled = false
 
 [status]
 format = '[\(ERROR $status\)]($style) '
+disabled = false
+
+[sudo]
+symbol = '⚡️'
 disabled = false
