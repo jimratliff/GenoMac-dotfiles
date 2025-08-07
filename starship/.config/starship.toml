@@ -8,7 +8,8 @@ $python\
 $docker_context\
 $cmd_duration\
 $line_break\
-$character"""
+$character\
+$status"""
 
 
 # Get editor completions based on the config schema
@@ -20,14 +21,17 @@ add_newline = true
 [character]
 success_symbol = "🔶" 
 error_symbol = "❌"
+disabled = false
 
 [directory]
 home_symbol = "🏠"
 truncate_to_repo = false
 truncation_length = 10
+disabled = false
 
 [git_branch]
 ignore_branches = ["main", "master"]
+disabled = false
 
 [git_commit]
 format = '[\(#️⃣ $hash$tag\)]($style) '
@@ -47,6 +51,11 @@ modified = '📝'
 staged = '[++\($count\)](green)'
 renamed = '👅'
 deleted = '🗑'
+disabled = false
 
 [line_break]
+disabled = false
+
+[status]
+format = '[$symbol$status]($style) '
 disabled = false
