@@ -26,6 +26,10 @@ success_symbol = "🔶"
 error_symbol = "❌"
 disabled = false
 
+[cmd_duration]
+format = '⏳ [$duration]($style) '
+disabled = false
+
 [directory]
 home_symbol = "🏠"
 truncate_to_repo = false
