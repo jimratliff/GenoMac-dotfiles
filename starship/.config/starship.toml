@@ -6,7 +6,7 @@
 # [](bg:#030B16 fg:blue)\
 format = """
 $directory \
-[](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
+[](bg:none fg:#030B16)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#030B16)\
 $fill\
 $python\
 $docker_context\
