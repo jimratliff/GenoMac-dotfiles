@@ -75,7 +75,8 @@ disabled = false
 
 [time]
 format = '[$time ]($style) '
-time_format = '📅 %F ⏱️ %T'
+# time_format = '📅 %F ⏱️ %T'
+time_format = '📅 %h %d ⏱️ %T'
 disabled = false
 
 [line_break]
