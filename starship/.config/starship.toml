@@ -1,6 +1,9 @@
 format = """
+[CONTENT](bg:#030B16 fg:#7DF9AA)\
 $directory\
-$git_branch$git_commit$git_status\
+$git_branch\
+$git_commit\
+$git_status\
 $fill\
 $python\
 $docker_context\
