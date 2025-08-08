@@ -9,9 +9,7 @@
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 format = """
 $directory \
-$git_state\
-$git_metrics\
-[$git_branch$git_commit$git_status](bg:none fg:#FCF392)\
+[$git_metrics$git_branch$git_commit$git_status](bg:none fg:#FCF392)\
 $fill\
 $python\
 $docker_context\
@@ -37,12 +35,8 @@ truncate_to_repo = false
 truncation_length = 10
 disabled = false
 
-[git_state]
-format = "[I am the governor of Git State](red)"
-disabled = false
-
 [git_metrics]
-format = 'I am the ghost of Christmas Past.'
+format = '[](bg:#030B16 fg:#3B76F0)'
 disabled = false
 
 [git_branch]
