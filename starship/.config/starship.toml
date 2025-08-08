@@ -1,6 +1,9 @@
 format = """
+[](bg:#030B16 fg:#7DF9AA)\
 [CONTENT](bg:red fg:yellow)\
+[󰀵 ](bg:#7DF9AA fg:#090c0c)\
 $directory\
+[](fg:#7DF9AA bg:#1C3A5E)\
 $git_branch\
 $git_commit\
 $git_status\
@@ -32,7 +35,7 @@ disabled = false
 
 [directory]
 home_symbol = "🏠"
-format = '[📁 $path]($style)[$read_only]($read_only_style) '
+format = '[ 📁: $path ]($style)[$read_only]($read_only_style) '
 style = 'bg:blue fg:white bold'
 truncate_to_repo = false
 truncation_length = 10
