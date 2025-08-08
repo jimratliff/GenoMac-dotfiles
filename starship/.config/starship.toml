@@ -36,13 +36,13 @@ truncation_length = 10
 disabled = false
 
 [git_metrics]
-format = '[](bg:#030B16 fg:#3B76F0)'
+format = '[](bg:none fg:#FCF392)'
 disabled = false
 
 [git_branch]
 # ignore_branches = ["main", "master"]
 symbol = ''
-format = '[](bg:none fg:#FCF392)[ $symbol $branch(:$remote_branch)]($style)'
+format = '[ $symbol $branch(:$remote_branch)]($style)'
 style = 'bg:#FCF392 fg:black'
 disabled = false
 
