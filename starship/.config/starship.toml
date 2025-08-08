@@ -10,6 +10,7 @@
 format = """
 $directory \
 $git_state\
+$git_metrics\
 [$git_branch$git_commit$git_status](bg:none fg:#FCF392)\
 $fill\
 $python\
@@ -37,7 +38,11 @@ truncation_length = 10
 disabled = false
 
 [git_state]
-format = "I am the governor of Git State"
+format = "[I am the governor of Git State](red)"
+disabled = false
+
+[git_metrics]
+format = 'I am the ghost of Christmas Past.'
 disabled = false
 
 [git_branch]
