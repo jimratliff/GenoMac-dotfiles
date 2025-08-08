@@ -88,7 +88,7 @@ style = 'bg:234 fg:bright-red bold'
 disabled = false
 
 [character]
-# success_symbol = "" 
-success_symbol = "🔶" 
+success_symbol = "" 
+# success_symbol = "🔶" 
 error_symbol = "❌"
 disabled = false
