@@ -36,7 +36,7 @@ truncation_length = 10
 disabled = false
 
 [git_metrics]
-format = '[ ](bg:none fg:#FCF392)'
+format = '[ ](bg:none fg:#FCF392)[ ](bg:#FCF392)'
 disabled = false
 
 [git_branch]
