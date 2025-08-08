@@ -1,7 +1,9 @@
 format = """
+# e0b6
 [](bg:#030B16 fg:blue)\
 $directory\
-[](fg:#7DF9AA bg:#1C3A5E)\
+# e0b0
+[](fg:blue bg:#030B16)\
 $git_branch\
 $git_commit\
 $git_status\
