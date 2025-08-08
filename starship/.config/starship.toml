@@ -75,13 +75,15 @@ disabled = false
 disabled = false
 
 [username]
-format = '\(👤 [$user]($style)\) '
-show_always = false
+format = '👤 [$user]($style) '
+style = 'bg:#FCF392 fg:black bold'
+show_always = true
 disabled = false
 
 [sudo]
 symbol = '🚨SUDO⚡️'
-format = '[\($symbol\) ]($style)'
+format = '[$symbol ]($style)'
+style = 'bg:#FCF392 fg:black bold'
 disabled = false
 
 [character]
