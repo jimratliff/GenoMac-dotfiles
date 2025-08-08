@@ -4,6 +4,7 @@
 # f0c8 nf-fa-square
 # e709 GitHub badge
 # f418 git branch
+# f07c nf-fa-folder_open
 # [](bg:#030B16 fg:blue)\
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 format = """
@@ -28,7 +29,7 @@ add_newline = true
 
 [directory]
 home_symbol = '🏠'
-format = '[](bg:#030B16 fg:#3B76F0)[ 📁: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:#3B76F0)'
+format = '[](bg:#030B16 fg:#3B76F0)[: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:#3B76F0)'
 style = 'bg:#3B76F0 fg:#E4E4E4 bold'
 truncate_to_repo = false
 truncation_length = 10
