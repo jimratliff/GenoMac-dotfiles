@@ -6,7 +6,7 @@
 # [](bg:#030B16 fg:blue)\
 format = """
 $directory\
-[](bg:#030B16 fg:green)[$git_branch$git_commit$git_status](bg:#030B16 fg:green)[](bg:#030B16 fg:green)\
+[](bg:none fg:green)[$git_branch$git_commit$git_status](bg:none fg:green)[](bg:none fg:green)\
 $fill\
 $python\
 $docker_context\
@@ -34,7 +34,7 @@ disabled = false
 
 [git_branch]
 # ignore_branches = ["main", "master"]
-format = '[$symbol $branch(:$remote_branch)]($style)'
+format = '[$symbol$branch(:$remote_branch)]($style)'
 style = 'bg:green fg:black bold'
 disabled = false
 
@@ -58,7 +58,7 @@ staged = '[++\($count\)](green)'
 renamed = '👅'
 deleted = '🗑'
 style = 'bg:green fg:black bold'
-format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '([\[$all_status$ahead_behind\]]($style))'
 disabled = false
 
 [cmd_duration]
