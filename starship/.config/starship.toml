@@ -1,8 +1,8 @@
+# e0b6 left_half_circle_thick
+# e0b0 left_hard_divider
 format = """
-# e0b6
 [](bg:#030B16 fg:blue)\
 $directory\
-# e0b0
 [](fg:blue bg:#030B16)\
 $git_branch\
 $git_commit\
