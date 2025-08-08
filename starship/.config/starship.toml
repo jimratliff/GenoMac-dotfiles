@@ -8,8 +8,8 @@
 # [](bg:#030B16 fg:blue)\
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 format = """
-$git_state\
 $directory \
+$git_state\
 [$git_branch$git_commit$git_status](bg:none fg:#FCF392)\
 $fill\
 $python\
