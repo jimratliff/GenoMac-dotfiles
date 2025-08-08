@@ -42,7 +42,7 @@ style = 'bg:green fg:black bold'
 disabled = false
 
 [git_commit]
-format = '[\(#️⃣  $hash$tag\)]($style) '
+format = '[# $hash$tag]($style) '
 style = 'bg:green fg:black bold'
 tag_disabled = false
 only_detached = false
@@ -60,6 +60,7 @@ modified = '📝'
 staged = '[++\($count\)](green)'
 renamed = '👅'
 deleted = '🗑'
+style = 'bg:green fg:black bold'
 disabled = false
 
 [line_break]
