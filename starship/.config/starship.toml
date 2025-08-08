@@ -1,5 +1,5 @@
 format = """
-[CONTENT](bg:#030B16 fg:#7DF9AA)\
+[CONTENT](bg:red fg:yellow)\
 $directory\
 $git_branch\
 $git_commit\
