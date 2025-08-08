@@ -40,7 +40,7 @@ format = '[](bg:none fg:#FCF392)[ ](bg:#FCF392)'
 disabled = false
 
 [git_branch]
-ignore_branches = ["main", "master"]
+# ignore_branches = ["main", "master"]
 symbol = ''
 format = '[$symbol $branch(:$remote_branch)]($style)'
 style = 'bg:#FCF392 fg:black'
