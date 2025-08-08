@@ -76,7 +76,7 @@ disabled = false
 [time]
 format = '[$time]($style) '
 # time_format = '📅 %F ⏱️ %T'
-time_format = '📅 %h %d ⏱️ %T'
+time_format = '📅 %h %e ⏱️ %T'
 style = 'yellow'
 disabled = false
 
