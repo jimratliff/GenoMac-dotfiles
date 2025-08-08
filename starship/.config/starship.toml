@@ -44,7 +44,7 @@ disabled = false
 
 [git_commit]
 format = '[ #$hash $tag]($style)'
-style = 'bg:#FCF392 fg:black bold'
+style = 'bg:#FCF392 fg:black'
 tag_disabled = false
 only_detached = false
 disabled = false
@@ -80,7 +80,7 @@ disabled = false
 [username]
 format = '[👤 $user ]($style) '
 style_user = 'bg:234 fg:bright-white bold'
-show_always = true
+show_always = false
 disabled = false
 
 [sudo]
