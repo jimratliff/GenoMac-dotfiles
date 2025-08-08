@@ -25,3 +25,5 @@ In order to develop and maintain this repo, USER_CONFIGURER (or some other user)
 
 
 [^1]: The meaning of the term “dotfiles” has been expanded in popular usage to also include, for example, `defaults` commands in macOS and other aspects of bootstrapping and configuring a Mac. This repo does *not* adopt this broader meaning.
+
+Gratuitous change to force a new commit hash.
