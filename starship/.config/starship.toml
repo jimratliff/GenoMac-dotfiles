@@ -39,7 +39,7 @@ disabled = false
 # ignore_branches = ["main", "master"]
 symbol = ''
 format = '[](bg:none fg:#FCF392)[ $symbol $branch(:$remote_branch)]($style)'
-style = 'bg:#FCF392 fg:black bold'
+style = 'bg:#FCF392 fg:black'
 disabled = false
 
 [git_commit]
