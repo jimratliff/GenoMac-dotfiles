@@ -1,5 +1,7 @@
 # e0b6 left_half_circle_thick
 # e0b0 left_hard_divider
+# e709 GitHub badge
+# f418 git branch
 format = """
 [](bg:#030B16 fg:blue)\
 $directory\
