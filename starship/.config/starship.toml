@@ -8,6 +8,7 @@
 # [](bg:#030B16 fg:blue)\
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 format = """
+$git_state\
 $directory \
 [$git_branch$git_commit$git_status](bg:none fg:#FCF392)\
 $fill\
@@ -33,6 +34,10 @@ format = '[](bg:#030B16 fg:#3B76F0)[: $path ]($style)[$read_only]($read_on
 style = 'bg:#3B76F0 fg:#E4E4E4'
 truncate_to_repo = false
 truncation_length = 10
+disabled = false
+
+[git_state]
+format = "I am the governor of Git State"
 disabled = false
 
 [git_branch]
