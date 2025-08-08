@@ -8,6 +8,7 @@
 # [](bg:#030B16 fg:blue)\
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 format = """
+$git_state\
 $directory \
 [$git_branch$git_commit$git_status](bg:none fg:#FCF392)\
 $fill\
@@ -33,12 +34,22 @@ format = '[](bg:#030B16 fg:#3B76F0)[: $path ]($style)[$read_only]($read_on
 style = 'bg:#3B76F0 fg:#E4E4E4'
 truncate_to_repo = false
 truncation_length = 10
+disabled = true
+
+[git_metrics]
+# Using git_metrics to detect that I’m in a git repo works, except that then the hash doesn’t update.
+format = '[](bg:none fg:#FCF392)[ ](bg:#FCF392)'
+disabled = true
+
+[git_state]
+format = 'I claim to be in a git repo'
 disabled = false
 
 [git_branch]
 # ignore_branches = ["main", "master"]
 symbol = ''
-format = '[](bg:none fg:#FCF392)[ $symbol $branch(:$remote_branch)]($style)'
+# format = '[](bg:none fg:#FCF392)[ $symbol $branch(:$remote_branch)]($style)'
+format = '[$symbol $branch(:$remote_branch)]($style)'
 style = 'bg:#FCF392 fg:black'
 disabled = false
 
