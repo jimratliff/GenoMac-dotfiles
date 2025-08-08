@@ -38,10 +38,12 @@ disabled = false
 
 [git_branch]
 ignore_branches = ["main", "master"]
+style = 'bg:green fg:black bold'
 disabled = false
 
 [git_commit]
 format = '[\(#️⃣  $hash$tag\)]($style) '
+style = 'bg:green fg:black bold'
 tag_disabled = false
 only_detached = false
 disabled = false
