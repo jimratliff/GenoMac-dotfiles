@@ -1,0 +1,90 @@
+# e0b6 left_half_circle_thick
+# e0b4 nf-ple-right_half_circle_thick
+# e0b0 left_hard_divider
+# e709 GitHub badge
+# f418 git branch
+# [](bg:#030B16 fg:blue)\
+format = """
+$directory \
+[](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
+$fill\
+$python\
+$docker_context\
+$cmd_duration\
+$time\
+$line_break\
+$username\
+$sudo\
+$character\
+$status"""
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[directory]
+home_symbol = '🏠'
+format = '[](bg:#030B16 fg:blue)[ 📁: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:blue)'
+style = 'bg:blue fg:white bold'
+truncate_to_repo = false
+truncation_length = 10
+disabled = false
+
+[git_branch]
+# ignore_branches = ["main", "master"]"🏠"
+symbol = ''
+format = '[ $symbol $branch(:$remote_branch)]($style)'
+style = 'bg:#FCF392 fg:black bold'
+disabled = false
+
+[git_commit]
+format = '[ #$hash $tag]($style)'
+style = 'bg:#FCF392 fg:black bold'
+tag_disabled = false
+only_detached = false
+disabled = false
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+style = 'bg:#FCF392 fg:black bold'
+format = '([\[$all_status$ahead_behind\]]($style))'
+disabled = false
+
+[cmd_duration]
+format = '\(⏳ [$duration]($style)\) '
+disabled = false
+
+[time]
+format = '[$time ]($style) '
+time_format = '📅 %F ⏱️ %T'
+disabled = false
+
+[line_break]
+disabled = false
+
+[username]
+format = '\(👤 [$user]($style)\) '
+show_always = false
+disabled = false
+
+[sudo]
+symbol = '🚨SUDO⚡️'
+format = '[\($symbol\) ]($style)'
+disabled = false
+
+[character]
+success_symbol = "🔶" 
+error_symbol = "❌"
+disabled = false
