@@ -26,8 +26,8 @@ add_newline = true
 
 [directory]
 home_symbol = '🏠'
-format = '[](bg:#030B16 fg:blue)[ 📁: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:blue)'
-style = 'bg:blue fg:white bold'
+format = '[](bg:#030B16 fg:#E4E4E4)[ 📁: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:#E4E4E4)'
+style = 'bg:#3B76F0 fg:#E4E4E4 bold'
 truncate_to_repo = false
 truncation_length = 10
 disabled = false
