@@ -83,7 +83,7 @@ disabled = false
 [sudo]
 symbol = '🚨SUDO⚡️'
 format = '[$symbol ]($style) '
-style = 'bg:13 fg:black bold'
+style = 'bg:234 fg:bright-red bold'
 disabled = false
 
 [character]
