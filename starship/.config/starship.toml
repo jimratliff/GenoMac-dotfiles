@@ -75,14 +75,14 @@ disabled = false
 disabled = false
 
 [username]
-format = '[👤 $user]($style) '
-style_user = 'bg:3 fg:black bold'
+format = '[👤 $user ]($style) '
+style_user = 'bg:234 fg:bright-white bold'
 show_always = true
 disabled = false
 
 [sudo]
 symbol = '🚨SUDO⚡️'
-format = '[$symbol ]($style)'
+format = '[$symbol ]($style) '
 style = 'bg:13 fg:black bold'
 disabled = false
 
