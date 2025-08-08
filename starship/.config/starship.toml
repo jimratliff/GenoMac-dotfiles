@@ -25,8 +25,7 @@ $status"""
 add_newline = true
 
 [directory]
-home_symbol = "🏠"
-symbol = ''
+home_symbol = 
 format = '[](bg:#030B16 fg:blue)[ 📁: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:blue)'
 style = 'bg:blue fg:white bold'
 truncate_to_repo = false
@@ -34,7 +33,8 @@ truncation_length = 10
 disabled = false
 
 [git_branch]
-# ignore_branches = ["main", "master"]
+# ignore_branches = ["main", "master"]"🏠"
+symbol = ''
 format = '[ $symbol$branch(:$remote_branch)]($style)'
 style = 'bg:green fg:black bold'
 disabled = false
