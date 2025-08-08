@@ -87,8 +87,9 @@ format = '[$symbol ]($style) '
 style = 'bg:234 fg:bright-red bold'
 disabled = false
 
-[character]
-success_symbol = "" 
+[character] 
 # success_symbol = "🔶" 
+success_symbol = '[](#FFA500)'
 error_symbol = "❌"
+format = '$symbol '
 disabled = false
