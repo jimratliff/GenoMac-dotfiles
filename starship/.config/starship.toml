@@ -65,6 +65,10 @@ style = 'bg:#FCF392 fg:black bold'
 format = '([$all_status$ahead_behind]($style))[ ](bg:none fg:#FCF392)'
 disabled = false
 
+[fill]
+symbol = '_'
+disabled = false
+
 [cmd_duration]
 format = '\(⏳ [$duration]($style)\) '
 disabled = false
