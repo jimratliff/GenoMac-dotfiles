@@ -9,7 +9,7 @@
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 format = """
 $directory \
-[$git_metrics$git_branch$git_commit$git_status](bg:none fg:#FCF392)\
+[$git_state$git_branch$git_commit$git_status](bg:none fg:#FCF392)\
 $fill\
 $python\
 $docker_context\
@@ -36,7 +36,12 @@ truncation_length = 10
 disabled = false
 
 [git_metrics]
+# Using git_metrics to detect that I’m in a git repo works, except that then the hash doesn’t update.
 format = '[](bg:none fg:#FCF392)[ ](bg:#FCF392)'
+disabled = true
+
+[git_state]
+format = 'I claim to be in a git repo'
 disabled = false
 
 [git_branch]
