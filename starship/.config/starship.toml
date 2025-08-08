@@ -76,7 +76,7 @@ disabled = false
 
 [username]
 format = '👤 [$user]($style) '
-style = 'bg:#FCF392 fg:black bold'
+style_user = 'bg:#FCF392 fg:black bold'
 show_always = true
 disabled = false
 
