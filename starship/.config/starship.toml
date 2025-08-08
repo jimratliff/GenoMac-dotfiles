@@ -35,7 +35,7 @@ disabled = false
 [git_branch]
 # ignore_branches = ["main", "master"]"🏠"
 symbol = ''
-format = '[ $symbol$branch(:$remote_branch)]($style)'
+format = '[ $symbol $branch(:$remote_branch)]($style)'
 style = 'bg:green fg:black bold'
 disabled = false
 
