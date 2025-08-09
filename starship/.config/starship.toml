@@ -93,8 +93,8 @@ show_always = true
 disabled = false
 
 [sudo]
-# symbol = 'SUDO'
-symbol = '🚨SUDO⚡️'
+symbol = 'SUDO'
+# symbol = '🚨SUDO⚡️'
 format = '[](fg:#FF5F1F)[$symbol]($style)[](fg:#FF5F1F) '
 style = 'bg:#FF5F1F fg:#E4E4E4 bold'
 disabled = false
