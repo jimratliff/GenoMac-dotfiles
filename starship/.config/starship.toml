@@ -9,6 +9,7 @@
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 # 2025_08_08_2004 [([](bg:none fg:#FCF392)[ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
 # 2025_08_08_2006 [([ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
+# 2025_08_08_2011 [([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
 format = """
 $directory \
 [([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
@@ -35,10 +36,6 @@ format = '[](bg:#030B16 fg:#3B76F0)[: $path ]($style)[$read_only]($read_on
 style = 'bg:#3B76F0 fg:#E4E4E4'
 truncate_to_repo = false
 truncation_length = 10
-disabled = false
-
-[git_metrics]
-format = '[](bg:none fg:#FCF392)[ ](bg:#FCF392)'
 disabled = false
 
 [git_branch]
