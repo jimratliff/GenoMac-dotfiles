@@ -79,7 +79,8 @@ $directory \
 $fill\
 $python\
 $docker_context\
-$cmd_duration$time\
+$cmd_duration\
+$time\
 $line_break\
 $sudo\
 $character\
