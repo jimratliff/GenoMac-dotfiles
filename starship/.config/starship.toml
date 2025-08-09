@@ -105,3 +105,13 @@ success_symbol = '[](#FFA500)'
 error_symbol = "❌"
 format = '$symbol '
 disabled = false
+
+[palettes.lozenges]
+directory_primary = '#3B76F0'
+directory_contrast = '#E4E4E4'
+git_primary = '#FCF392'
+git_contrast = 'black'
+username_primary = 'white'
+username_contrast = 'black'
+sudo_primary = '#FF5F1F'
+sudo_contrast = '#E4E4E4'
