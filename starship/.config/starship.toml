@@ -66,7 +66,7 @@ staged = '[++\($count\)](green)'
 renamed = '👅'
 deleted = '🗑'
 style = 'bg:#FCF392 fg:black bold'
-format = '([$all_status$ahead_behind]($style))[ ](bg:none fg:#FCF392)'
+format = '([$all_status$ahead_behind]($style))'
 disabled = false
 
 [fill]
