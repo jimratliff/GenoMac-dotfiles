@@ -34,7 +34,7 @@ add_newline = true
 palette = "lozenges"
 
 [username]
-format = '[👤 $user ]($style) '
+format = '[](bg:#030B16 fg:username_primary)[👤 $user ]($style)[](bg:#030B16 fg:username_primary) '
 style_user = 'bg:username_primary fg:username_contrast'
 show_always = true
 disabled = false
