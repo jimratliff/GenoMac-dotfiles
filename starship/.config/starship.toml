@@ -94,8 +94,8 @@ disabled = false
 
 [sudo]
 symbol = '🚨SUDO⚡️'
-format = '[$symbol ]($style) '
-style = 'bg:7 fg:bright-red bold'
+format = '[$symbol]($style) '
+style = 'bg:8 fg:bright-red bold'
 disabled = false
 
 [character] 
