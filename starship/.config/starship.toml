@@ -1,3 +1,55 @@
+# Starship configuration for colored-lozenges prompt.
+#
+# STRUCTURE
+# This is a two-line prompt:
+# - Line 1:
+#   - Left-justified items
+#     - username (conditionally displayed)
+#       - White lozenge
+#       - Displays username only if any of the following conditions are met:
+#         - the current user is root/admin
+#         - the current user isn’t the same as the one that is logged in
+#         - the user is currently connected as an SSH session
+#         - the variable `show_always` is set to `true`
+#       - To test how the username module displays within the prompt, in the `[username]` module below, change `show_always` to `always`
+#     - directory
+#       - Blue lozenge
+#       - if current directory is in a git repository, truncates the path to the root of the repo
+#       - TODO: Experiment with value for `truncation_length` to ensure first line of prompt is not too long
+#       - CONSIDER: Use `substitutions` to provide short name for literal strings that occur in path.
+#         However, these are likely to be user-specific, so would have to figure out how to allow each user to make modifications to
+#         to starship.toml without screwing up the propagation of changes to all users.
+#     - git summary
+#       - Yellow lozenge
+#       - Three components
+#         - branch (conditionally displayed)
+#           - the branch is displayed only if the branch is *not* 'main' or 'master'
+#             - this behavior can be reversed (i.e., branch is unconditionally displayed, even if 'main' or 'master') by,
+#               in module `[git_branch]` below, commenting out the `ignore_branches` line
+#         - commit hash
+#         - status
+#           - TODO: Revisit the symbols assigned to various conditions in a real-world context.
+#             Note: I’ve currently overridden the assigned symbols with a bunch of emojis that aren’t readily informative.
+#   - Right-justified items
+#     - Elapsed time for command (conditionally displayed)
+#       - Prefaced with an hourglass emoji ('⏳'); not a lozenge
+#     - Month/day and time
+#       - Not a lozenge
+#         - Month/day
+#           - Prefaced with a calendar-page emoji ('📅') ; three-letter month; day of month is *not* padded
+#         - Time
+#           - Prefaced with a watch emoji ('⏱️')
+# - Line 2 (all left justified):
+#   - SUDO (conditionally displayed)
+#     - "SUDO" in an orange lozenge
+#     - is displayed only if sudo credentials are current cached (at the time the prompt is rendered)
+#     - Note: sudo credentials can expire with the passage of time, but a previously rendered "SUDO" will be retroactively removed.
+#   - Prompt “character”
+#     - A yellow right arrow (formed by two characters)
+
+
+
+
 # e0b6 left_half_circle_thick
 # e0b4 nf-ple-right_half_circle_thick
 # e0b0 nf-pl-left_hard_divider
@@ -45,8 +97,9 @@ disabled = false
 home_symbol = '🏠'
 format = '[](fg:directory_primary)[: $path ]($style)[$read_only]($read_only_style)[](fg:directory_primary)'
 style = 'bg:directory_primary fg:directory_contrast'
-truncate_to_repo = false
-truncation_length = 10
+truncate_to_repo = true
+truncation_length = 3
+truncation_symbol = '…/'
 disabled = false
 
 [git_branch]
@@ -90,7 +143,6 @@ disabled = false
 
 [time]
 format = '[$time]($style) '
-# time_format = '📅 %F ⏱️ %T'
 time_format = ' 📅 %h %-e ⏱️ %T'
 style = 'time_related_font_color'
 disabled = false
