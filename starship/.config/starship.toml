@@ -10,6 +10,7 @@
 # 2025_08_08_2004 [([](bg:none fg:#FCF392)[ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
 # 2025_08_08_2006 [([ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
 # 2025_08_08_2011 [([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
+# 2025_08_09_1104 '[](bg:#030B16 fg:username_primary)[👤 $user ]($style)[](bg:#030B16 fg:username_primary) '
 format = """
 $username\
 $directory \
@@ -34,7 +35,7 @@ add_newline = true
 palette = "lozenges"
 
 [username]
-format = '[](bg:#030B16 fg:username_primary)[👤 $user ]($style)[](bg:#030B16 fg:username_primary) '
+format = '[](fg:username_primary)[👤 $user ]($style)[](fg:username_primary) '
 style_user = 'bg:username_primary fg:username_contrast'
 show_always = true
 disabled = false
