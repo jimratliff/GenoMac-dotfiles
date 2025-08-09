@@ -151,7 +151,7 @@ style = 'bg:time_primary fg:time_contrast bold'
 disabled = false
 
 [time]
-format = '[$time]($style)'
+format = '[$time]($style) '
 time_format = ' 📅 %h %-e ⏱️ %T'
 style = 'bg:time_primary fg:time_contrast'
 disabled = false
