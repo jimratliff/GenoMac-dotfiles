@@ -61,15 +61,21 @@
 #  Tips for dealing with Nerd Font unicode characters
 #  - To determine what character a noninformative rectangleish character (e.g., '') refers to, use BBEdit’s Character Inspector:
 #    Window » Palettes » Character Inspector
+# - To enter a unicode character on macOS:
+#   - Add Unicode Hex Input as a text input: System Settings » Keyboard » Text Input » Input Sources » Edit…, add Unicode Hex Input
+#   - Select Unicode Hex Input from the text-input menuextra
+#   - Hold ⌥ (option) while typing each of the four characters, e.g., ⌥F0C8
 #
 # - Structure of a generic lozenge
 #   - Example: format = '[](fg:sudo_primary)[$symbol]($style)[](fg:sudo_primary) '
 #
 # COLORS
-# - The relevant colors are defined in `[palettes.lozenges_darkmode]` below
-# - Each module of the prompt (other than the time-related group) has each of the following types of colors defined:
+# - The relevant colors are defined in `[palettes.lozenges]` below
+# - Each module of the prompt has each of the following types of colors defined:
 #   - `_primary`: the color of the lozenge
 #   - `_contrast`: the color of text to contrast with the lozenge (`_primary`) color
+# - This prompt is optimized for dark mode. It will work in light mode, but in particular the time-related section on the right-hand
+#   side of the first line will not look pleasing.
 
 ############### `format` of the two-line prompt
 format = """
