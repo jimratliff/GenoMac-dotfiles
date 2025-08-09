@@ -12,7 +12,7 @@
 # 2025_08_08_2011 [([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
 format = """
 $directory \
-[( ($git_branch$git_commit$git_status) )](fg:#FCF392)\
+[([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
 $fill\
 $python\
 $docker_context\
