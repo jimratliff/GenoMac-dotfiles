@@ -33,6 +33,12 @@ add_newline = true
 # Specify color palette
 palette = "lozenges"
 
+[username]
+format = '[👤 $user ]($style) '
+style_user = 'bg:username_primary fg:username_contrast'
+show_always = true
+disabled = false
+
 [directory]
 home_symbol = '🏠'
 format = '[](bg:#030B16 fg:directory_primary)[: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:directory_primary)'
@@ -87,12 +93,6 @@ style = 'yellow'
 disabled = false
 
 [line_break]
-disabled = false
-
-[username]
-format = '[👤 $user ]($style) '
-style_user = 'bg:white fg:black'
-show_always = true
 disabled = false
 
 [sudo]
