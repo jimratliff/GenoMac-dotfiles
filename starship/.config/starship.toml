@@ -79,8 +79,7 @@ $directory \
 $fill\
 $python\
 $docker_context\
-$cmd_duration\
-$time\
+[([ ](bg:time_primary)($cmd_duration$time\) )](fg:time_primary)\
 $line_break\
 $sudo\
 $character\
@@ -148,12 +147,13 @@ disabled = false
 [cmd_duration]
 format = '\(⏳ [$duration]($style)\) '
 style = 'bold time_related_font_color'
+style = 'bg:time_primary fg:time_contrast bold'
 disabled = false
 
 [time]
 format = '[$time]($style) '
 time_format = ' 📅 %h %-e ⏱️ %T'
-style = 'time_related_font_color'
+style = 'bg:time_primary fg:time_contrast'
 disabled = false
 
 [line_break]
@@ -182,7 +182,8 @@ username_primary = '#E4E4E4'
 username_contrast = '#212121'
 sudo_primary = '#FF5F1F'
 sudo_contrast = '#E4E4E4'
-time_related_font_color = '#FFFF00'
+time_primary = '#212121'
+time_contrast = '#FFFF00'
 
 [palettes.lozenges_lightmode]
 directory_primary = '#3B76F0'
