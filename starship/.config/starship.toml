@@ -93,8 +93,7 @@ $status"""
 add_newline = true
 
 # Specify color palette
-palette = "lozenges_darkmode"
-# palette = "lozenges_lightmode"
+palette = "lozenges"
 
 [username]
 format = '[](fg:username_primary)[👤 $user ]($style)[](fg:username_primary) '
@@ -151,6 +150,8 @@ style = 'bg:time_primary fg:time_contrast bold'
 disabled = false
 
 [time]
+# Note: the space at the end of literal on the rhs of the following `format` statement is necessary to prevent iTerm from erroneously
+#       wrapping the final character onto the next line.
 format = '[$time]($style) '
 time_format = ' 📅 %h %-e ⏱️ %T'
 style = 'bg:time_primary fg:time_contrast'
@@ -173,7 +174,7 @@ error_symbol = "❌"
 format = '$symbol '
 disabled = false
 
-[palettes.lozenges_darkmode]
+[palettes.lozenges]
 directory_primary = '#3B76F0'
 directory_contrast = '#E4E4E4'
 git_primary = '#FCF392'
@@ -184,14 +185,3 @@ sudo_primary = '#FF5F1F'
 sudo_contrast = '#E4E4E4'
 time_primary = '#212121'
 time_contrast = '#FFFF00'
-
-[palettes.lozenges_lightmode]
-directory_primary = '#3B76F0'
-directory_contrast = '#E4E4E4'
-git_primary = '#FCF392'
-git_contrast = '#212121'
-username_primary = '#E4E4E4'
-username_contrast = '#212121'
-sudo_primary = '#FF5F1F'
-sudo_contrast = '#E4E4E4'
-time_related_font_color = '#0000FF'
