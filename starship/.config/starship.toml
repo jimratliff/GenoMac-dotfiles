@@ -30,6 +30,9 @@ $status"""
 # Inserts a blank line between shell prompts
 add_newline = true
 
+# Specify color palette
+palette = "lozenges"
+
 [directory]
 home_symbol = '🏠'
 format = '[](bg:#030B16 fg:#3B76F0)[: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:#3B76F0)'
