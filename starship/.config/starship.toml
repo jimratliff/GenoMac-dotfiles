@@ -90,7 +90,7 @@ disabled = false
 format = '[👤 $user ]($style) '
 # style_user = 'bg:234 fg:bright-white bold'
 style_user = 'bg:white fg:black'
-show_always = true
+show_always = false
 disabled = false
 
 [sudo]
