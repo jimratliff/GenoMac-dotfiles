@@ -8,9 +8,10 @@
 # [](bg:#030B16 fg:blue)\
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 # 2025_08_08_2004 [([](bg:none fg:#FCF392)[ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
+# 2025_08_08_2006 [([ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
 format = """
 $directory \
-[([ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
+[([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
 $fill\
 $python\
 $docker_context\
