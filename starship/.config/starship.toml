@@ -50,20 +50,23 @@
 # SPECIAL CHARACTERS RELIED UPON
 # - Nerd Font characters
 #   - Unicode, classname, description, purpose
-#     - E0B6 nf-ple-left_half_circle_thick    half-circle for left-end cap on lozenges
-#     - E0B4 nf-ple-right_half_circle_thick   half-circle for right-end cap on lozenges
-#     - F0C8 nf-fa-square                     square for first character of success_symbol in `[character]` module
-#     - E0B0 nf-pl-left_hard_divider          right-pointing solid triangle for second character of success_symbol in `[character]` module
+#     -   E0B6 nf-ple-left_half_circle_thick    half-circle for left-end cap on lozenges
+#     -   E0B4 nf-ple-right_half_circle_thick   half-circle for right-end cap on lozenges
+#     -   F0C8 nf-fa-square                     square for first character of success_symbol in `[character]` module
+#     -   E0B0 nf-pl-left_hard_divider          right-pointing solid triangle for second character of success_symbol in `[character]` module
+#     -   F07C nf-fa-folder_open                folder icon for module `[directory]`
+#     -   E709 nf-dev-github                    GitHub logo for the Git summary
+#     -   F418 nf-oct-git_branch                icon to indicate a git branch, for `[git_branch]` module
 
 
 
-# e0b6 left_half_circle_thick
-# e0b4 nf-ple-right_half_circle_thick
-# e0b0 nf-pl-left_hard_divider
-# f0c8 nf-fa-square
-# e709 GitHub badge
-# f418 git branch
-# f07c nf-fa-folder_open
+
+
+
+
+
+
+
 # [](bg:#030B16 fg:blue)\
 # [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
 # 2025_08_08_2004 [([](bg:none fg:#FCF392)[ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
