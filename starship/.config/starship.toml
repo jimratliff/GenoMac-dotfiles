@@ -83,13 +83,14 @@ disabled = false
 
 [cmd_duration]
 format = '\(⏳ [$duration]($style)\) '
+style = 'bold time_related_font_color'
 disabled = false
 
 [time]
 format = '[$time]($style) '
 # time_format = '📅 %F ⏱️ %T'
 time_format = ' 📅 %h %-e ⏱️ %T'
-style = 'yellow'
+style = 'time_related_font_color'
 disabled = false
 
 [line_break]
@@ -118,3 +119,4 @@ username_primary = 'white'
 username_contrast = 'black'
 sudo_primary = '#FF5F1F'
 sudo_contrast = '#E4E4E4'
+time_related_font_color = 'yellow'
