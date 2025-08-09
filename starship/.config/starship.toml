@@ -79,7 +79,7 @@ $directory \
 $fill\
 $python\
 $docker_context\
-[](fg:time_primary)$cmd_duration$time\
+$cmd_duration$time\
 $line_break\
 $sudo\
 $character\
