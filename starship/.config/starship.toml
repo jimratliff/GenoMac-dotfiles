@@ -11,6 +11,7 @@
 # 2025_08_08_2006 [([ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
 # 2025_08_08_2011 [([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
 format = """
+$username\
 $directory \
 [([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
 $fill\
@@ -19,7 +20,6 @@ $docker_context\
 $cmd_duration\
 $time\
 $line_break\
-$username\
 $sudo\
 $character\
 $status"""
