@@ -1,0 +1,117 @@
+# e0b6 left_half_circle_thick
+# e0b4 nf-ple-right_half_circle_thick
+# e0b0 nf-pl-left_hard_divider
+# f0c8 nf-fa-square
+# e709 GitHub badge
+# f418 git branch
+# f07c nf-fa-folder_open
+# [](bg:#030B16 fg:blue)\
+# [](bg:none fg:#FCF392)[$git_branch$git_commit$git_status](bg:none fg:#FCF392)[ ](bg:none fg:#FCF392)\
+# 2025_08_08_2004 [([](bg:none fg:#FCF392)[ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
+# 2025_08_08_2006 [([ ](bg:#FCF392)$git_branch$git_commit$git_status[ ](bg:none fg:#FCF392))](bg:none fg:#FCF392)\
+# 2025_08_08_2011 [([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
+format = """
+$username\
+$directory \
+[([ ](bg:#FCF392)($git_branch$git_commit$git_status) )](fg:#FCF392)\
+$fill\
+$python\
+$docker_context\
+$cmd_duration\
+$time\
+$line_break\
+$sudo\
+$character\
+$status"""
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+[directory]
+home_symbol = '🏠'
+format = '[](bg:#030B16 fg:#3B76F0)[: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:#3B76F0)'
+style = 'bg:#3B76F0 fg:#E4E4E4'
+truncate_to_repo = false
+truncation_length = 10
+disabled = false
+
+[git_branch]
+# ignore_branches = ["main", "master"]
+symbol = ''
+format = '[$symbol $branch(:$remote_branch)]($style)'
+style = 'bg:#FCF392 fg:black'
+disabled = false
+
+[git_commit]
+format = '[ #$hash $tag]($style)'
+style = 'bg:#FCF392 fg:black'
+tag_disabled = false
+only_detached = false
+disabled = false
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+style = 'bg:#FCF392 fg:black bold'
+format = '([$all_status$ahead_behind]($style))'
+disabled = false
+
+[fill]
+symbol = ' •  '
+disabled = false
+
+[cmd_duration]
+format = '\(⏳ [$duration]($style)\) '
+disabled = false
+
+[time]
+format = '[$time]($style) '
+# time_format = '📅 %F ⏱️ %T'
+time_format = ' 📅 %h %-e ⏱️ %T'
+style = 'yellow'
+disabled = false
+
+[line_break]
+disabled = false
+
+[username]
+format = '[👤 $user ]($style) '
+style_user = 'bg:white fg:black'
+show_always = true
+disabled = false
+
+[sudo]
+symbol = 'SUDO'
+# symbol = '🚨SUDO⚡️'
+format = '[](fg:#FF5F1F)[$symbol]($style)[](fg:#FF5F1F) '
+style = 'bg:#FF5F1F fg:#E4E4E4 bold'
+disabled = false
+
+[character] 
+# success_symbol = "🔶" 
+success_symbol = '[](#FFA500)'
+error_symbol = "❌"
+format = '$symbol '
+disabled = false
+
+[palettes.lozenges]
+directory_primary = '#3B76F0'
+directory_contrast = '#E4E4E4'
+git_primary = '#FCF392'
+git_contrast = 'black'
+username_primary = 'white'
+username_contrast = 'black'
+sudo_primary = '#FF5F1F'
+sudo_contrast = '#E4E4E4'
