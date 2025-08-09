@@ -42,7 +42,7 @@ disabled = false
 
 [directory]
 home_symbol = '🏠'
-format = '[](bg:#030B16 fg:directory_primary)[: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:directory_primary)'
+format = '[](fg:directory_primary)[: $path ]($style)[$read_only]($read_only_style)[](fg:directory_primary)'
 style = 'bg:directory_primary fg:directory_contrast'
 truncate_to_repo = false
 truncation_length = 10
