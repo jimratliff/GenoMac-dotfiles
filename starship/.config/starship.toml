@@ -35,7 +35,7 @@ palette = "lozenges"
 
 [directory]
 home_symbol = '🏠'
-format = '[](bg:#030B16 fg:#3B76F0)[: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:#3B76F0)'
+format = '[](bg:#030B16 fg:directory_primary)[: $path ]($style)[$read_only]($read_only_style)[](bg:#030B16 fg:directory_primary)'
 style = 'bg:#3B76F0 fg:#E4E4E4'
 truncate_to_repo = false
 truncation_length = 10
