@@ -146,7 +146,6 @@ disabled = false
 
 [cmd_duration]
 format = '\(⏳ [$duration]($style)\) '
-style = 'bold time_related_font_color'
 style = 'bg:time_primary fg:time_contrast bold'
 disabled = false
 
