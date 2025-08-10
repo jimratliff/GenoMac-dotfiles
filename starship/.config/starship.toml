@@ -165,6 +165,13 @@ disabled = false
 # pyenv_version_name = true
 # pyenv_prefix = ''
 
+# Example of how to do Docker context. Not yet tested
+# [docker_context]
+# symbol = ' '
+# style = 'fg:#06969A'
+# format = '[$symbol]($style) $path'
+# detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
+# detect_extensions = ['Dockerfile']
 
 [cmd_duration]
 format = '\(⏳ [$duration]($style)\)'
