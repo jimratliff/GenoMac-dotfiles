@@ -116,6 +116,13 @@ truncation_length = 3
 truncation_symbol = '…/'
 disabled = false
 
+# Example of how to do directory substitutions
+# [directory.substitutions]
+# 'Documents' = '󰈙'
+# 'Downloads' = ' '
+# 'Music' = ' '
+# 'Pictures' = ' '
+
 [git_branch]
 # ignore_branches = ["main", "master"]
 symbol = ''
