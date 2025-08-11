@@ -104,7 +104,7 @@ palette = "lozenges"
 [username]
 format = '[](fg:username_primary)[👤 $user ]($style)[](fg:username_primary) '
 style_user = 'bg:username_primary fg:username_contrast'
-show_always = true
+show_always = false
 disabled = false
 
 [directory]
