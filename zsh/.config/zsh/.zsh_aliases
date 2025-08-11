@@ -1,11 +1,15 @@
+# Fallbacks (harmless if already set)
+: "${XDG_CONFIG_HOME:="$HOME/.config"}"
+: "${ZDOTDIR:="$XDG_CONFIG_HOME/zsh"}"
+
 ############### Reload shell
-alias reload_shell="source ~/.zshrc"
+alias reload_shell='exec zsh -l'  # full login reload; avoids sourcing gotchas
 
 ############### Update dotfiles
-alias update_dotfiles='(cd ~/.genomac-dotfiles && echo "📦 Pulling latest dotfiles…" && git pull origin main)'
+alias update_dotfiles='echo "📦 Pulling latest dotfiles…" && git -C "$HOME/.genomac-dotfiles" pull --ff-only origin main'
 
 ############### Show aliases
-alias show_aliases="bat ~/.zsh_aliases"
+alias show_aliases='bat "$ZDOTDIR/.zsh_aliases"'
 
 ############### Replace ls with eza
 alias ls="eza"
