@@ -124,7 +124,7 @@ disabled = false
 # 'Pictures' = ' '
 
 [git_branch]
-# ignore_branches = ["main", "master"]
+ignore_branches = ["main", "master"]
 symbol = ''
 format = '[$symbol $branch(:$remote_branch)]($style)'
 style = 'bg:git_primary fg:git_contrast'
