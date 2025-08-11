@@ -3,10 +3,12 @@
 : "${ZDOTDIR:="$XDG_CONFIG_HOME/zsh"}"
 
 ############### Reload shell
+# `zsh -l`: starts a login shell (“pretend this shell was started as a login shell”)
 alias reload_shell='exec zsh -l'  # full login reload; avoids sourcing gotchas
 
 ############### Update dotfiles
-alias update_dotfiles='echo "📦 Pulling latest dotfiles…" && git -C "$HOME/.genomac-dotfiles" pull --ff-only origin main'
+alias update_dotfiles='echo "📦 Pulling latest dotfiles…" && \
+  git -C "$HOME/.genomac-dotfiles" pull --ff-only origin main'
 
 ############### Show aliases
 alias show_aliases='bat "$ZDOTDIR/.zsh_aliases"'
