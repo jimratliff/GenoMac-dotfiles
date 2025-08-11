@@ -13,6 +13,18 @@ alias update_dotfiles='echo "📦 Pulling latest dotfiles…" && \
 ############### Show aliases
 alias show_aliases='bat "$ZDOTDIR/.zsh_aliases"'
 
+############### Edit aliases
+alias edit_aliases='$EDITOR "$ZDOTDIR/.zsh_aliases"'
+
+############### Short reference to .zshrc
+ZSHRC="$ZDOTDIR/.zshrc"
+
+############### Show .zshrc
+alias show_zshrc='bat "$ZSHRC"'
+
+############### Edit .zshrc
+alias edit_zshrc='$EDITOR "$ZSHRC"'
+
 ############### Replace ls with eza
 alias ls="eza"
 
