@@ -9,6 +9,9 @@ if [[ -S "$sock" ]]; then
   export SSH_AUTH_SOCK="$sock"
 fi
 
+# Sets default EDITOR if not already set
+: "${EDITOR:=bbedit}"   # or "nano", "nvim", "vim", "code", etc.
+
 # Source aliases file, .zsh_aliases, assumed in the same directory as this .zshrc file
 # • ${0} → name of the current script
 # • ${0:A} → absolute path
