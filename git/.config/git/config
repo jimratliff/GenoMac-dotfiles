@@ -3,3 +3,5 @@
 	name = Jim Ratliff
 	email = 8410716+jimratliff@users.noreply.github.com
 
+[core]
+	excludesFile = ~/.config/git/git_ignore_global
